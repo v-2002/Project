@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Web Scrapping</title>
+</head>
+
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo">MindGo Tech</div>
+            <div class="menu">
+                <a href="{{ url_for('home') }}" class="active">Home</a>
+                <a href="#" class="active">About</a>
+                <a href="#" class="active">Contact</a>
+            </div>
+        </nav>
+        <div class="container">
+            <a href="{{ url_for('show_data') }}" target="_blank">
+            <button class="btn">Go to Scrap Data</button>
+            </a>
+        </div> 
+    </header>
+    
+    
+</body>
+
+</html>
